@@ -25,9 +25,9 @@ class Transport implements TransportInterface
                 [
                     'email' => $address,
                     'substitutions' => [
-                        'title' => $message->getTitle(),
-                        'text' => $message->getText(),
-                        'link' => $message->getLink(),
+                        'title' => strval($message->getTitle()),
+                        'text' => strval($message->getText()),
+                        'link' => strval($message->getLink()),
                     ]
                 ]
             ],
